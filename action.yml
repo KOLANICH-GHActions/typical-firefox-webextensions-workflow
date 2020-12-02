@@ -1,0 +1,12 @@
+name: typical-firefox-webextension-workflow
+description: |
+  Just builds and publishes as artifacts all the WebExts it can reach.
+author: KOLANICH
+
+runs:
+  using: "node12" # GitHub disallows to use anything other there
+  main: "startBash.js" # ECMA modules are not yet supported by GH Actions
+
+branding:
+  icon: tick
+  color: green
